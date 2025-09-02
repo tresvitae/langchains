@@ -15,3 +15,9 @@ These three labs cover techniques for parsing and handling the output generated 
 - **Lab 5** introduces basic parsing strategies, such as extracting structured data from plain text responses.
 - **Lab 6** explores more advanced parsing, including error handling and validation of model outputs.
 - **Lab 7** focuses on integrating parsing logic into end-to-end workflows, ensuring that model outputs can be reliably used in downstream applications. The progression from Lab 5 to Lab 7 moves from simple extraction to robust, production-grade output handling.
+
+lab8 + lab9 + lab10 - LangChain Debugging and Monitoring
+These three labs focus on different approaches to debugging, monitoring, and observing LangChain operations for better development and production insights.
+- **Lab 8** demonstrates global debugging using `set_debug(True)` which provides comprehensive tracing of all chain operations including timing, input/output flow, and internal processing steps. It also showcases the modern pipe operator (`|`) syntax for chain composition.
+- **Lab 9** focuses on the `verbose=True` parameter in LLMChain, which provides chain-specific logging without global settings. This approach gives you detailed output for individual chains while maintaining control over what gets logged.
+- **Lab 10** introduces callback handlers, specifically `StdOutCallbackHandler`, for real-time monitoring of chain execution. This provides the most flexible approach to observability, allowing custom handling of execution events and integration with external monitoring systems. The progression from Lab 8 to Lab 10 moves from global debugging to targeted verbose logging to customizable callback-based monitoring. 
