@@ -20,4 +20,16 @@ lab8 + lab9 + lab10 - LangChain Debugging and Monitoring
 These three labs focus on different approaches to debugging, monitoring, and observing LangChain operations for better development and production insights.
 - **Lab 8** demonstrates global debugging using `set_debug(True)` which provides comprehensive tracing of all chain operations including timing, input/output flow, and internal processing steps. It also showcases the modern pipe operator (`|`) syntax for chain composition.
 - **Lab 9** focuses on the `verbose=True` parameter in LLMChain, which provides chain-specific logging without global settings. This approach gives you detailed output for individual chains while maintaining control over what gets logged.
-- **Lab 10** introduces callback handlers, specifically `StdOutCallbackHandler`, for real-time monitoring of chain execution. This provides the most flexible approach to observability, allowing custom handling of execution events and integration with external monitoring systems. The progression from Lab 8 to Lab 10 moves from global debugging to targeted verbose logging to customizable callback-based monitoring. 
+- **Lab 10** introduces callback handlers, specifically `StdOutCallbackHandler`, for real-time monitoring of chain execution. This provides the most flexible approach to observability, allowing custom handling of execution events and integration with external monitoring systems. The progression from Lab 8 to Lab 10 moves from global debugging to targeted verbose logging to customizable callback-based monitoring.
+
+lab11 + lab12 + lab13 + lab14 - LangChain Expression Language (LCEL) Fundamentals
+These four labs introduce the modern LangChain Expression Language and different execution methods for chains.
+- **Lab 11** covers basic chain composition using the pipe operator (`|`) and introduces schema inspection capabilities. You'll learn to build fundamental chains with prompt → model → parser flow and understand input/output schemas for better debugging and validation.
+- **Lab 12** demonstrates streaming functionality using the `stream()` method for real-time response processing. This lab shows how to provide better user experience by displaying responses as they arrive, rather than waiting for complete generation.
+- **Lab 13** introduces batch processing with the `batch()` method for efficiently handling multiple queries simultaneously. This approach optimizes performance when processing multiple similar requests.
+- **Lab 14** extends batch processing with advanced techniques and best practices for handling different types of batch inputs and optimizing batch operations for better performance and throughput.
+
+lab15 + lab16 - Advanced LangChain Composition Patterns
+These two labs explore sophisticated chain composition techniques for building complex workflows.
+- **Lab 15** demonstrates custom function integration using `RunnableLambda` to wrap Python functions for use in chains. You'll learn to combine LLM responses with custom logic, create complex processing pipelines, and visualize chain structure with graph representation.
+- **Lab 16** showcases advanced chain composition using `RunnablePassthrough` for multi-step content generation workflows. This lab builds a complete content pipeline (input → title → outline → blog → summary) demonstrating data flow management between dependent chain operations and creating sophisticated automated content generation systems.
