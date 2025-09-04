@@ -44,6 +44,40 @@ These two labs demonstrate how to implement long-term, persistent memory in conv
 - **Lab 19** focuses on setting up Redis-based persistent memory using `RedisChatMessageHistory` and `RunnableWithMessageHistory`. You'll learn how to create conversation threads that survive application restarts, manage multiple independent conversation sessions using session IDs, and understand the advantages of persistent storage over in-memory approaches. This lab shows how to start new conversations and maintain separate context for different topics (math vs physics threads).
 - **Lab 20** demonstrates conversation continuity by resuming conversations from Lab 19 after simulating an application restart. You'll see how Redis preserves conversation history across different execution contexts, enabling true stateful conversational applications. This lab proves that conversations can be seamlessly continued from exactly where they left off, making it ideal for production chatbots and conversational AI systems that need to maintain long-term user relationships.
 
+### 🔍 Redis Database Inspection Guide
+To explore and verify the conversation data stored in Redis, you can inspect the database contents using the following commands:
+
+**Step 1: Access the Redis Container**
+```bash
+docker exec -it <container_id> /bin/bash
+```
+
+**Step 2: Connect to Redis CLI**
+```bash
+redis-cli
+```
+
+**Step 3: List All Stored Keys**
+```bash
+KEYS *
+```
+
+**Step 4: View Conversation History**
+```bash
+# View specific conversation thread (example: math-thread1)
+LRANGE message_store:math-thread1 0 -1
+
+# View all messages in a thread from newest to oldest
+LRANGE message_store:physics-thread1 0 -1
+```
+
+**Additional Useful Redis Commands:**
+- `TYPE <key>` - Check the data type of a key
+- `TTL <key>` - Check if a key has an expiration time
+- `DBSIZE` - Get the total number of keys in the database
+- `INFO memory` - Check Redis memory usage statistics 
+
+
 lab21 + lab22 - Document Loading for RAG (Retrieval Augmented Generation)
 These two labs introduce document loading capabilities as the foundation for building RAG systems that can incorporate external knowledge sources.
 - **Lab 21** demonstrates PDF document loading using `PyPDFLoader` for extracting and processing text content from PDF files. You'll learn how to load PDF documents, split them into manageable page-based chunks, access individual pages, and understand document structure and metadata. This lab is essential for building knowledge bases from PDF documents like manuals, research papers, and reports.
@@ -62,3 +96,5 @@ lab26 + lab27 - Complete RAG Systems (PDF and Web Content)
 These two labs demonstrate complete end-to-end RAG (Retrieval Augmented Generation) systems that combine all previous concepts into production-ready question-answering applications.
 - **Lab 26** builds a comprehensive PDF RAG system using PyPDFLoader, demonstrating the complete pipeline: Load → Split → Embed → Store → Retrieve → Generate. You'll create a system that can answer questions about employee handbooks, policy documents, or any PDF content with factual accuracy grounded in document context. This lab shows how to process static documents into intelligent knowledge bases for enterprise applications.
 - **Lab 27** adapts the same RAG architecture for web content using WebBaseLoader, enabling real-time information retrieval from online sources. You'll build a system that can answer questions about current events, news articles, and frequently-updated web content. This demonstrates RAG system flexibility and shows how the same architectural patterns work across different content sources. Together, these labs provide the complete foundation for building production RAG systems that can handle both static documents and dynamic web content, essential for modern AI applications that need access to both archived knowledge and current information. 
+
+lab28 - Implementing Chains
