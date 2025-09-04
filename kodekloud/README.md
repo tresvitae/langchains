@@ -33,3 +33,8 @@ lab15 + lab16 - Advanced LangChain Composition Patterns
 These two labs explore sophisticated chain composition techniques for building complex workflows.
 - **Lab 15** demonstrates custom function integration using `RunnableLambda` to wrap Python functions for use in chains. You'll learn to combine LLM responses with custom logic, create complex processing pipelines, and visualize chain structure with graph representation.
 - **Lab 16** showcases advanced chain composition using `RunnablePassthrough` for multi-step content generation workflows. This lab builds a complete content pipeline (input → title → outline → blog → summary) demonstrating data flow management between dependent chain operations and creating sophisticated automated content generation systems.
+
+lab17 + lab18 - Memory Management and Configuration
+These two labs introduce advanced LangChain features for conversation management and dynamic chain configuration.
+- **Lab 17** focuses on implementing short-term memory in conversational AI using `MessagesPlaceholder`. You'll learn how to inject conversation history into prompts, maintain context across multiple interactions, and build AI systems that remember previous exchanges. This lab demonstrates the difference between contextless and contextual conversations, showing how memory enables more natural dialogue flow.
+- **Lab 18** demonstrates configurable fields using `ConfigurableField` for dynamic runtime configuration of chain components. You'll learn to create flexible chains that can switch between different models (like GPT-3.5-turbo vs GPT-4) without recreating the entire chain structure. This lab shows how to build adaptable systems that can be reconfigured on-the-fly for different use cases or performance requirements.
