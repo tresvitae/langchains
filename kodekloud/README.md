@@ -107,4 +107,52 @@ These two labs introduce LangChain's tool ecosystem for integrating external kno
 - **Lab 30** demonstrates Wikipedia integration using `WikipediaQueryRun` and `WikipediaAPIWrapper` for accessing structured, reliable knowledge from the world's largest encyclopedia. You'll learn how to configure tools for optimal results, understand LangChain's standardized tool interfaces, and process external knowledge sources. This lab shows how to bring current, authoritative information into AI systems beyond training data limitations. Essential for research applications, educational tools, and knowledge-based AI systems that need access to verified, comprehensive information.
 - **Lab 31** introduces Tavily Search integration for real-time web search capabilities using professional search APIs optimized for AI applications. You'll learn how to access current information from across the internet, process structured search results with URLs and metadata, and understand when to use web search versus knowledge bases. This lab enables AI systems to answer questions about recent events, current data, and rapidly changing information that wouldn't be available in static knowledge sources. Perfect for building AI agents that need access to breaking news, current events, sports updates, and time-sensitive information.
 
-lab32 + lab33 - using tools
+lab32 + lab33 - Financial Tools and Custom Tool Development
+These two labs complete the tool integration series by demonstrating specialized financial tools and advanced custom tool development patterns for building domain-specific AI applications.
+- **Lab 32** showcases Yahoo Finance integration using `YahooFinanceNewsTool` for accessing real-time financial market information, stock prices, and financial news. You'll learn how to integrate financial data APIs, process market information for AI analysis, and build financial intelligence systems. This lab demonstrates how specialized tools can provide domain-specific knowledge for investment analysis, market research, and financial advisory applications. Essential for building AI systems that need access to current market data, financial news, and economic indicators.
+- **Lab 33** introduces custom tool development using the `@tool` decorator to create domain-specific tools tailored to your application needs. You'll learn how to build a custom flight status tool, understand tool metadata generation, implement proper type hints for validation, and integrate custom tools with LangChain chains. This lab represents the culmination of tool development, showing how to create production-ready custom tools that extend LangChain's capabilities beyond pre-built integrations. Perfect for building specialized business tools, proprietary API integrations, and custom workflows that require unique functionality not available in standard tool libraries.
+
+## 🎯 Complete Learning Path Summary
+
+This comprehensive 33-lab curriculum takes you through the complete LangChain ecosystem, from basic LLM interactions to advanced AI system development:
+
+### Foundation (Labs 1-7)
+- **LLM Basics**: Direct model invocation and response handling
+- **Prompt Engineering**: Templates, few-shot learning, and structured prompts
+- **Output Processing**: Parsing, validation, and structured data extraction
+
+### Development & Debugging (Labs 8-10)
+- **Observability**: Global debugging, verbose logging, and callback handlers
+- **Monitoring**: Real-time execution tracking and performance analysis
+- **Production Readiness**: Error handling and system introspection
+
+### Modern LangChain (Labs 11-16)
+- **LCEL Fundamentals**: Chain composition with pipe operators
+- **Execution Patterns**: Streaming, batch processing, and async operations
+- **Advanced Composition**: Custom functions, data flow, and complex pipelines
+
+### Memory & State (Labs 17-20)
+- **Conversation Management**: Short-term memory and context preservation
+- **Dynamic Configuration**: Runtime chain modification and model switching
+- **Persistent Storage**: Redis integration and long-term conversation state
+
+### Knowledge Integration (Labs 21-29)
+- **Document Processing**: PDF, web content, and intelligent text splitting
+- **Semantic Search**: Embeddings, vector databases, and similarity matching
+- **RAG Systems**: Complete retrieval-augmented generation pipelines
+- **Production Architecture**: High-level abstractions and enterprise patterns
+
+### External Integration (Labs 30-33)
+- **Knowledge Sources**: Wikipedia and authoritative information access
+- **Real-time Data**: Web search and current information retrieval
+- **Financial Intelligence**: Market data and financial analysis tools
+- **Custom Development**: Building specialized tools for unique business needs
+
+### Key Learning Outcomes
+- **Complete LangChain Mastery**: From basics to advanced production systems
+- **Real-world Applications**: Enterprise-ready patterns and best practices
+- **Tool Development**: Both using existing tools and creating custom solutions
+- **System Architecture**: Scalable, maintainable AI application design
+- **Production Deployment**: Monitoring, debugging, and performance optimization
+
+This curriculum provides everything needed to build sophisticated AI applications using LangChain, from simple chatbots to complex knowledge systems and custom AI-powered business solutions.
