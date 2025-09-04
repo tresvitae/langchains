@@ -167,5 +167,43 @@ This comprehensive 35-lab curriculum takes you through the complete LangChain ec
 
 This curriculum provides everything needed to build sophisticated AI applications using LangChain, from simple chatbots to intelligent agents capable of complex reasoning, tool orchestration, and autonomous problem-solving for real-world business applications.
 
+---
 
-Source: Langchain course in Kodekloud
+## 📚 Course Information
+
+### Source Attribution
+This comprehensive LangChain curriculum is based on the **LangChain course from KodeKloud**, a leading online platform for hands-on technology training. The labs have been enhanced with detailed documentation, comprehensive comments, and production-ready insights to provide a complete learning experience.
+
+### About KodeKloud
+**KodeKloud** is a premium online learning platform specializing in practical, hands-on training for DevOps, Cloud, and AI/ML technologies. Known for their interactive labs and real-world scenarios, KodeKloud provides industry-relevant skills training that bridges the gap between theoretical knowledge and practical implementation.
+
+### Course Details
+- **Platform**: KodeKloud
+- **Course**: LangChain Fundamentals and Advanced Applications
+- **Format**: Hands-on labs with practical exercises
+- **Coverage**: Complete LangChain ecosystem from basics to production deployment
+- **Target Audience**: Developers, AI Engineers, and DevOps professionals
+
+### Enhanced Documentation
+The original KodeKloud lab exercises have been significantly enhanced with:
+- **Comprehensive Comments**: Detailed explanations in every notebook cell
+- **Production Insights**: Real-world deployment considerations and best practices
+- **Architecture Guidance**: System design patterns and scalability considerations
+- **Learning Objectives**: Clear outcomes and skill development pathways
+- **Advanced Examples**: Extended use cases and integration patterns
+
+### Recommended Learning Path
+For the complete learning experience, consider:
+1. **Take the original KodeKloud course** for structured instruction and guided exercises
+2. **Use this documentation** as a comprehensive reference and study guide
+3. **Implement the labs** with the enhanced comments for deeper understanding
+4. **Explore the production considerations** for real-world application development
+
+### Additional Resources
+- **KodeKloud Platform**: [https://kodekloud.com](https://kodekloud.com)
+- **LangChain Documentation**: [https://langchain.readthedocs.io](https://langchain.readthedocs.io)
+- **Community Support**: KodeKloud Discord and forums for course-specific discussions
+
+---
+
+*This enhanced documentation maintains the practical, hands-on approach of the original KodeKloud course while providing additional depth and production-ready insights for professional AI application development.*
