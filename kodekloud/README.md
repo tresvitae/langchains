@@ -112,9 +112,16 @@ These two labs complete the tool integration series by demonstrating specialized
 - **Lab 32** showcases Yahoo Finance integration using `YahooFinanceNewsTool` for accessing real-time financial market information, stock prices, and financial news. You'll learn how to integrate financial data APIs, process market information for AI analysis, and build financial intelligence systems. This lab demonstrates how specialized tools can provide domain-specific knowledge for investment analysis, market research, and financial advisory applications. Essential for building AI systems that need access to current market data, financial news, and economic indicators.
 - **Lab 33** introduces custom tool development using the `@tool` decorator to create domain-specific tools tailored to your application needs. You'll learn how to build a custom flight status tool, understand tool metadata generation, implement proper type hints for validation, and integrate custom tools with LangChain chains. This lab represents the culmination of tool development, showing how to create production-ready custom tools that extend LangChain's capabilities beyond pre-built integrations. Perfect for building specialized business tools, proprietary API integrations, and custom workflows that require unique functionality not available in standard tool libraries.
 
+lab34 + lab35 - Intelligent Agents and Multi-Tool Orchestration
+These two labs introduce LangChain's powerful agent framework, demonstrating how to build AI systems that can autonomously select and coordinate multiple tools to solve complex problems through intelligent reasoning and decision-making.
+- **Lab 34** establishes the foundation of agent architecture using `create_tool_calling_agent` with web search capabilities through TavilySearchResults. You'll learn how agents differ from simple chains by making dynamic decisions about tool usage, understand agent reasoning patterns and decision-making processes, and implement conversation memory for contextual interactions. This lab demonstrates the core agent concepts including autonomous tool selection, scratchpad reasoning, and intelligent workflow orchestration that forms the basis for building sophisticated AI assistants.
+- **Lab 35** extends agent capabilities by creating multi-tool agents that combine web search with mathematical computation through PythonREPLTool integration. You'll learn how agents intelligently select between different tools based on query requirements, coordinate complex workflows that require both information retrieval and computational analysis, and manage multi-step reasoning processes that span different tool domains. This lab showcases advanced agent patterns including sequential tool usage, context-aware tool selection, and integrated result synthesis, demonstrating how agents can handle diverse, complex tasks that require multiple complementary capabilities.
+
+
+
 ## 🎯 Complete Learning Path Summary
 
-This comprehensive 33-lab curriculum takes you through the complete LangChain ecosystem, from basic LLM interactions to advanced AI system development:
+This comprehensive 35-lab curriculum takes you through the complete LangChain ecosystem, from basic LLM interactions to advanced AI system development:
 
 ### Foundation (Labs 1-7)
 - **LLM Basics**: Direct model invocation and response handling
@@ -142,17 +149,23 @@ This comprehensive 33-lab curriculum takes you through the complete LangChain ec
 - **RAG Systems**: Complete retrieval-augmented generation pipelines
 - **Production Architecture**: High-level abstractions and enterprise patterns
 
-### External Integration (Labs 30-33)
+### External Integration (Labs 30-35)
 - **Knowledge Sources**: Wikipedia and authoritative information access
 - **Real-time Data**: Web search and current information retrieval
 - **Financial Intelligence**: Market data and financial analysis tools
 - **Custom Development**: Building specialized tools for unique business needs
+- **Agent Architecture**: Intelligent systems with autonomous tool selection
+- **Multi-Tool Orchestration**: Complex workflows combining diverse capabilities
 
 ### Key Learning Outcomes
 - **Complete LangChain Mastery**: From basics to advanced production systems
 - **Real-world Applications**: Enterprise-ready patterns and best practices
 - **Tool Development**: Both using existing tools and creating custom solutions
+- **Agent Intelligence**: Autonomous reasoning and multi-tool coordination
 - **System Architecture**: Scalable, maintainable AI application design
 - **Production Deployment**: Monitoring, debugging, and performance optimization
 
-This curriculum provides everything needed to build sophisticated AI applications using LangChain, from simple chatbots to complex knowledge systems and custom AI-powered business solutions.
+This curriculum provides everything needed to build sophisticated AI applications using LangChain, from simple chatbots to intelligent agents capable of complex reasoning, tool orchestration, and autonomous problem-solving for real-world business applications.
+
+
+Source: Langchain course in Kodekloud
